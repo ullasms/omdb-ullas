@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backdrop_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/poster_image_view"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:hint="image view" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:hint="Movie title"
+            android:layout_below="@id/poster_image_view"/>
+
+        <TextView
+            android:id="@+id/overview_heading"
+            style="@style/title_style"
+            android:layout_below="@id/movie_title"
+            android:text="Overview" />
+
+        <TextView
+            android:id="@+id/overview"
+            style="@style/value_style"
+            android:layout_below="@id/overview_heading"
+            android:hint="Overview" />
+
+        <TextView
+            android:id="@+id/release_date_heading"
+            style="@style/title_style"
+            android:text="Release Date"
+            android:layout_below="@id/overview"/>
+
+        <TextView
+            android:id="@+id/release_date"
+            style="@style/value_style"
+            android:hint="Release Date"
+            android:layout_below="@id/release_date_heading"/>
+
+        <TextView
+            android:id="@+id/adult_heading"
+            style="@style/title_style"
+            android:text="Adult"
+            android:layout_below="@id/release_date"/>
+
+        <TextView
+            android:id="@+id/adult"
+            style="@style/value_style"
+            android:hint="Adult"
+            android:layout_below="@id/adult_heading"/>
+
+        <TextView
+            android:id="@+id/language_heading"
+            style="@style/title_style"
+            android:text="Language"
+            android:layout_below="@id/adult"/>
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Language"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_below="@id/language_heading"/>
+
+        <TextView
+            android:id="@+id/popularity_heading"
+            style="@style/title_style"
+            android:text="Popularity"
+            android:layout_below="@id/language"/>
+
+        <TextView
+            android:id="@+id/popularity"
+            style="@style/value_style"
+            android:hint="Popularity"
+            android:layout_below="@id/popularity_heading"/>
+
+        <TextView
+            android:id="@+id/vote_count_heading"
+            style="@style/title_style"
+            android:text="Vote Count"
+            android:layout_below="@id/popularity"/>
+
+        <TextView
+            android:id="@+id/vote_count"
+            style="@style/value_style"
+            android:hint="Vote Count"
+            android:layout_below="@id/vote_count_heading"/>
+
+        <TextView
+            android:id="@+id/vote_average_heading"
+            style="@style/title_style"
+            android:text="Vote Average"
+            android:textColor="@color/white"
+            android:layout_below="@id/vote_count"/>
+
+        <TextView
+            android:id="@+id/vote_average"
+            style="@style/value_style"
+            android:hint="Vote Average"
+            android:layout_below="@id/vote_average_heading"/>
+    </RelativeLayout>
+</ScrollView>
+
